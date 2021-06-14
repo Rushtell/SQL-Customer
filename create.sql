@@ -13,9 +13,9 @@ CREATE TABLE Customers
 	CONSTRAINT PK_CustomerId PRIMARY KEY CLUSTERED (CustomerId),
 	FirstName NVARCHAR(50) NOT NULL,
 	LastName NVARCHAR(50) NOT NULL,
-	PhoneNumber NVARCHAR(50) NOT NULL,
+	PhoneNumber NVARCHAR(15) NOT NULL,
 	Email NVARCHAR(50) NOT NULL,
-	TotalPurchasesAmount decimal NOT NULL
+	TotalPurchasesAmount money NULL
 )
 
 GO
